@@ -29,7 +29,7 @@ local material = {
 if vim.g.material_style == 'darker' then
 	-- Darker theme style
 
-	material.bg =			'#212121'
+	material.bg =			'#011627'
 	material.bg_alt =		'#1A1A1A'
 	material.fg =			'#B0BEC5'
 	material.text =			'#727272'
@@ -77,7 +77,7 @@ elseif vim.g.material_style == 'lighter' then
 elseif vim.g.material_style == 'palenight' then
 	-- Palenight theme style
 
-	material.bg =			'#292D3E'
+	material.bg =			'#011627'
 	material.bg_alt =		'#1B1E2B'
 	material.fg =			'#A6ACCD'
 	material.text =			'#676E95'
