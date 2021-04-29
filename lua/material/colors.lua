@@ -77,7 +77,7 @@ elseif vim.g.material_style == 'lighter' then
 elseif vim.g.material_style == 'palenight' then
 	-- Palenight theme style
 
-	material.bg =			'#011627'
+	material.bg =			'#222436'
 	material.bg_alt =		'#1B1E2B'
 	material.fg =			'#A6ACCD'
 	material.text =			'#676E95'
