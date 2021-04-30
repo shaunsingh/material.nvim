@@ -1,4 +1,9 @@
-# 🌊 material.nvim
+# 🌊 shaunsingh/material.nvim
+
+Modified version of marko-cerovac/material.nvim, to fit more with the material moonlight theme + added a lightline theme
+to use the lightline theme replace material.vim with the lightline theme and set let:g lightline_colorscheme to 'material'
+
+
 A port or [Material](https://material-theme.site) colorscheme for NeoVim written in lua
 
 Theme is inspired by https://github.com/kaicataldo/material.vim
