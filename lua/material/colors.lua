@@ -26,7 +26,7 @@ local material = {
 
 -- Style specific colors
 
-elseif vim.g.material_style == 'moonlight' then
+if vim.g.material_style == 'moonlight' then
 	-- Palenight theme style
 
 	material.bg =			'#2f334d'
