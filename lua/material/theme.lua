@@ -109,7 +109,7 @@ theme.loadEditor = function ()
 		IncSearch =				{ fg = material.highlight, bg = material.white, style = 'reverse' },
 		LineNr =				{ fg = material.line_numbers },
 		CursorLineNr =			{ fg = material.accent },
-		MatchParen =			{ fg = material.cyan, bg = material.none },
+		MatchParen =			{ fg = material.yellow, bg = material.none, style = 'bold' },
 		ModeMsg =				{ fg = material.accent },
 		MoreMsg =				{ fg = material.accent },
 		NonText =				{ fg = material.disabled },
@@ -136,7 +136,7 @@ theme.loadEditor = function ()
 		Title =					{ fg = material.green, bg = material.none, style = 'bold' },
 		Visual =				{ fg = material.none, bg = material.selection },
 		VisualNOS =				{ fg = material.none, bg = material.selection },
-		WarningMsg =			{ fg = material.warning },
+		WarningMsg =			{ fg = material.yellow },
 		WildMenu =				{ fg = material.orange, bg = material.none, style = 'bold' },
 		CursorColumn =			{ fg = material.none, bg = material.active },
 		CursorLine =			{ fg = material.none, bg = material.active },
@@ -147,11 +147,17 @@ theme.loadEditor = function ()
 		ReplacelMode =			{ fg = material.red, bg = material.none, style = 'reverse' },
 		VisualMode =			{ fg = material.purple, bg = material.none, style = 'reverse' },
 		CommandMode =			{ fg = material.gray, bg = material.none, style = 'reverse' },
-		Warnings =				{ fg = material.warning },
+		Warnings =				{ fg = material.yellow },
 
         healthError =           { fg = material.error },
         healthSuccess =         { fg = material.green },
-        healthWarning =         { fg = material.warning },
+        healthWarning =         { fg = material.yellow },
+
+        -- Dashboard
+        DashboardShortCut =                     { fg = material.red },
+        DashboardHeader =                       { fg = material.comments },
+        DashboardCenter =                       { fg = material.accent },
+        DashboardFooter =                       { fg = material.green, style = "italic" },
 
 	}
 
@@ -227,8 +233,8 @@ theme.loadTreeSitter = function ()
         TSPunctBracket =            { fg = material.cyan }, -- For brackets and parens.
         TSPunctSpecial =            { fg = material.cyan }, -- For special punctutation that does not fall in the catagories before.
         TSString =                  { fg = material.green },    -- For strings.
-        TSStringRegex =             { fg = material.blue6 }, -- For regexes.
-        TSStringEscape =            { fg = material.orange }, -- For escape characters within a string.
+        TSStringRegex =             { fg = material.blue }, -- For regexes.
+        TSStringEscape =            { fg = material.disabled }, -- For escape characters within a string.
         TSSymbol =                  { fg = material.yellow },    -- For identifiers referring to symbols or atoms.
         TSType =                    { fg = material.purple },    -- For types.
         TSTypeBuiltin =             { fg = material.purple },    -- For builtin types.
@@ -296,11 +302,11 @@ theme.loadLSP = function ()
         LspDiagnosticsFloatingError =           { fg = material.error }, -- used for "Error" diagnostic messages in the diagnostics float
         LspDiagnosticsVirtualTextError =        { fg = material.error }, -- Virtual text "Error"
         LspDiagnosticsUnderlineError =          { style = 'undercurl', sp = material.error }, -- used to underline "Error" diagnostics.
-        LspDiagnosticsDefaultWarning =          { fg = material.warning}, -- used for "Warning" diagnostic signs in sign column
-        LspDiagnosticsSignWarning =             { fg = material.warning}, -- used for "Warning" diagnostic signs in sign column
-        LspDiagnosticsFloatingWarning =         { fg = material.warning}, -- used for "Warning" diagnostic messages in the diagnostics float
-        LspDiagnosticsVirtualTextWarning =      { fg = material.warning}, -- Virtual text "Warning"
-        LspDiagnosticsUnderlineWarning =        { style = 'undercurl', sp = material.warning }, -- used to underline "Warning" diagnostics.
+        LspDiagnosticsDefaultWarning =          { fg = material.yellow}, -- used for "Warning" diagnostic signs in sign column
+        LspDiagnosticsSignWarning =             { fg = material.yellow}, -- used for "Warning" diagnostic signs in sign column
+        LspDiagnosticsFloatingWarning =         { fg = material.yellow}, -- used for "Warning" diagnostic messages in the diagnostics float
+        LspDiagnosticsVirtualTextWarning =      { fg = material.yellow}, -- Virtual text "Warning"
+        LspDiagnosticsUnderlineWarning =        { style = 'undercurl', sp = material.yellow }, -- used to underline "Warning" diagnostics.
         LspDiagnosticsDefaultInformation =      { fg = material.paleblue }, -- used for "Information" diagnostic virtual text
         LspDiagnosticsSignInformation =         { fg = material.paleblue },  -- used for "Information" diagnostic signs in sign column
         LspDiagnosticsFloatingInformation =     { fg = material.paleblue }, -- used for "Information" diagnostic messages in the diagnostics float
@@ -386,15 +392,9 @@ theme.loadPlugins = function()
         NvimTreeFolderIcon=                     { fg = material.accent },
         NvimTreeIndentMarker =                  { fg  = material.border },
         LspDiagnosticsError =                   { fg = material.error },
-        LspDiagnosticsWarning =                 { fg = material.warning },
+        LspDiagnosticsWarning =                 { fg = material.yellow },
         LspDiagnosticsInformation =             { fg = material.paleblue },
         LspDiagnosticsHint =                    { fg = material.purple },
-
-        -- Dashboard
-        DashboardShortCut =                     { fg = material.cyan },
-        DashboardHeader =                       { fg = material.accent },
-        DashboardCenter =                       { fg = material.purple },
-        DashboardFooter =                       { fg = material.yellow, style = "italic" },
 
         -- WhichKey
         WhichKey =                              { fg = material.accent , style = 'bold'},
@@ -406,7 +406,7 @@ theme.loadPlugins = function()
 
         -- LspSaga
         DiagnosticError =                       { fg = material.error },
-        DiagnosticWarning =                     { fg = material.warning },
+        DiagnosticWarning =                     { fg = material.yellow },
         DiagnosticInformation =                 { fg = material.paleblue },
         DiagnosticHint =                        { fg = material.purple },
         DiagnosticTruncateLine =                { fg = material.fg },
@@ -434,6 +434,10 @@ theme.loadPlugins = function()
         -- Sneak
         Sneak =                                 { fg = material.bg, bg = material.accent },
         SneakScope =                            { bg = material.selection },
+
+        -- Indent Blankline
+        IndentBlanklineChar =                   { fg = material.highlight },
+        IndentBlanklineContextChar =            { fg = material.disabled },
     }
 
     -- Options:
