@@ -6,4 +6,4 @@ package.loaded['material.theme'] = nil
 package.loaded['material.functions'] = nil
 
 require('material').set()
-E
+EOF
