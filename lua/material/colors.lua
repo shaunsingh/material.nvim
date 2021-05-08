@@ -5,20 +5,20 @@ local material = {
 	gray =  		'#7f85a3',
 	black = 		'#000000',
 	red =   		'#ff757f',
-	green = 		'#c3e88d',
+	green = 		'#2df4c0',
 	--lime =		'#98EE64',
 	yellow =		'#ffc777',
 	blue =  		'#82aaff',
-	paleblue =		'#3e68d7',
-	cyan =  		'#86e1fc',
-	purple =		'#c099ff',
+	paleblue =		'#a3ace2',
+	cyan =  		'#04d1f9',
+	purple =		'#b4a4f4',
 	--violet =		'#B66FFD',
-	orange =		'#ff966c',
-	pink =  		'#fca7ea',
+	orange =		'#f67f81',
+	pink =  		'#ecb2f0',
 
 	error =			'#FF5370',
 	link =			'#80CBC4',
-	cursor =		'#FFCC00',
+	cursor =		'#5cb4fc',
 
 	none =			'NONE'
 }
@@ -32,13 +32,13 @@ if vim.g.material_style == 'moonlight' then
 	material.bg_alt =		'#1B1E2B'
 	material.fg =			'#e4f3fa'
 	material.text =			'#e4f3fa'
-	material.comments =		'#7e8eda'
-	material.selection = 	'#74a0f1'
+	material.comments =		'#7486d6'
+	material.selection = 		'#403c64'
 	material.contrast =		'#1b1d2c'
 	material.active =		'#414863'
 	material.border =		'#414863'
-	material.line_numbers =	'#5b6395'
-	material.highlight =	'#444267'
+	material.line_numbers =		'#5b6395'
+	material.highlight =		'#444267'
 	material.disabled =		'#515772'
 	material.accent =		'#9da5d7'
 end
