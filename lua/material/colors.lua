@@ -34,7 +34,7 @@ if vim.g.material_style == 'moonlight' then
 	material.text =			'#676E95'
 	material.comments =		'#676E95'
 	material.selection = 	'#717CB4'
-	material.contrast =		'#202331'
+	material.contrast =		'#2f334d'
 	material.active =		'#414863'
 	material.border =		'#414863'
 	material.line_numbers =	'#3A3F58'
