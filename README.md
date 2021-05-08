@@ -91,7 +91,7 @@ vim.g.material_style = "moonlight"
 
 | Option                              | Default     | Description                                                                                                                                                     |
 | ----------------------------------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| material_style                      | `"moonlight"` | This version of the theme only includes the moonlight version of the theme
+| material_style                      | `"moonlight"` | This version of the theme only includes moonlight, please visit the parent repo for the other material themes
 | material_italic_comments            | `false`     | Make comments italic                                                                                                                                            |
 | material_italic_keywords            | `false`     | Make keywords italic                                                                                                                                            |
 | material_italic_functions           | `false`     | Make functions italic                                                                                                                                           |
