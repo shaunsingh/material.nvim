@@ -4,34 +4,10 @@
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/71196912/117550047-02eb4000-b00c-11eb-9a63-c26ab4612fa5.png">
 
-To use, install `shaunsingh/moonlight.nvim` through your package manager of choice. Set `let g:material_style = 'moonlight'` and `colorscheme = material`
-To configure, you can set any of the options available for the original moonlight.nvim
-
-Original Readme:
-
-A port or [Material](https://material-theme.site) colorscheme for NeoVim written in lua
-
-Theme is inspired by https://github.com/kaicataldo/material.vim
-
-![screen](/media/Material.png)
-
-## 🔱 Info
-
-This is the lua branch that doesn't rely on colorbuddy.nvim anymore.
-
-If you want the version that uses colorbuddy.nvim, you can find it [here](https://github.com/marko-cerovac/material.nvim/tree/colorbuddy)
-
 ## ✨ Features
 
-material.nvim is meant to be a modern colorscheme written in lua for NeoVim that supports a lot of the new features
+moonlight.nvim is meant to be a modern colorscheme written in lua for NeoVim that supports a lot of the new features
 added to NeoVim like built-in LSP and [TreeSitter](https://github.com/nvim-treesitter/nvim-treesitter)
-
-+ 6 styles to choose from
-    + Deep ocean ![screen](/media/deep-ocean.png)
-    + Oceanic ![screen](/media/oceanic.png)
-    + Palenight ![screen](/media/palenight.png)
-    + Lighter ![screen](/media/lighter.png)
-    + Darker ![screen](/media/darker.png)
 
 + Supported plugins:
     + [TreeSitter](https://github.com/nvim-treesitter/nvim-treesitter)
@@ -66,12 +42,12 @@ added to NeoVim like built-in LSP and [TreeSitter](https://github.com/nvim-trees
 Install via your favourite package manager:
 ```vim
 " If you are using Vim-Plug
-Plug 'marko-cerovac/material.nvim'
+Plug 'shaunsingh/moonlight.nvim'
 ```
 
 ```lua
 -- If you are using Packer
-use 'marko-cerovac/material.nvim'
+use 'shaunsingh/moonlight.nvim'
 ```
 
 ## 🐬 Usage
@@ -102,27 +78,20 @@ require('lualine').setup {
 
 ## ⚙️ Configuration
 
-+ There are 5 different styles available:
-    + darker
-    + lighter
-    + oceanic
-    + palenight
-    + deep ocean
-
-Set the desired style using:
+Set the style using:
 ```vim 
 "Vim-Script:
-let g:material_style = 'darker'
+let g:material_style = 'moonlight'
 ```
 
 ```lua
 --Lua:
-vim.g.material_style = "deep ocean"
+vim.g.material_style = "moonlight"
 ```
 
 | Option                              | Default     | Description                                                                                                                                                     |
 | ----------------------------------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| material_style                      | `"oceanic"` | The theme comes in five styles, 'darker', 'lighter', 'palenight', 'oceanic' and 'deep ocean'
+| material_style                      | `"moonlight"` | This version of the theme only includes the moonlight version of the theme
 | material_italic_comments            | `false`     | Make comments italic                                                                                                                                            |
 | material_italic_keywords            | `false`     | Make keywords italic                                                                                                                                            |
 | material_italic_functions           | `false`     | Make functions italic                                                                                                                                           |
@@ -133,7 +102,7 @@ vim.g.material_style = "deep ocean"
 
 ```lua
 -- Example config in lua
-vim.g.material_style = 'deep ocean'         
+vim.g.material_style = 'moonlight'         
 vim.g.material_italic_comments = true
 vim.g.material_italic_keywords = true
 vim.g.material_italic_functions = true
@@ -148,7 +117,7 @@ require('material').set()
 
 ```vim
 " Example config in Vim-Script
-let g:material_style = 'deep ocean'         
+let g:material_style = 'moonlight'         
 let g:material_italic_comments = true
 let g:material_italic_keywords = true
 let g:material_italic_functions = true
@@ -161,47 +130,5 @@ let g:material_disable_background = false
 colorscheme material
 ```
 
-## ⛵ Functions
+Original Readme: https://github.com/marko-cerovac/material.nvim/blob/pure-lua/README.md
 
-+ Toggle the style live without the need to exit NeoVim
-
-![screen](/media/toggle_style.gif)
-
-Just call the function for style switching
-```vim
-"Vim-Script
-:lua require('material.functions').toggle_style()
-"This command toggles the style
-```
-
-The command can also be mapped to a key for fast style switching
-```vim
-"Vim-Script:
-nnoremap <C-m> :lua require('material.functions').toggle_style()<CR>
-```
-
-```lua
---Lua:
-vim.api.nvim_set_keymap('n', '<C-m>', [[<Cmd>lua require('material.functions').toggle_style()<CR>]], { noremap = true, silent = true })
-```
-
-
-+ Change the style to a desired one using the function change_style("desired style")
-```vim
-"Vim-Script:
-:lua require('material.functions').change_style("palenight")
-"This command changes the style to palenight
-```
-
-The command can also be mapped to a key for fast style switching
-```vim
-"Vim-Script:
-nnoremap <C-9> :lua require('material.functions').change_style('lighter')<CR>
-nnoremap <C-0> :lua require('material.functions').change_style('darker')<CR>
-```
-
-```lua
---Lua:
-vim.api.nvim_set_keymap('n', '<C-9>', [[<Cmd>lua require('material.functions').change_style('lighter')<CR>]], { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-0>', [[<Cmd>lua require('material.functions').change_style('darker')<CR>]], { noremap = true, silent = true })
-```
