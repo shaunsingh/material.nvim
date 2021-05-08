@@ -38,9 +38,9 @@ if vim.g.material_style == 'moonlight' then
 	material.active =		'#414863'
 	material.border =		'#414863'
 	material.line_numbers =		'#5b6395'
-	material.highlight =		'#444267'
+	material.highlight =		'#a1abe0'
 	material.disabled =		'#515772'
-	material.accent =		'#9da5d7'
+	material.accent =		'#d8e9f1'
 end
 
 -- Optional colors
