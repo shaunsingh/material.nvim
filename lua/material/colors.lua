@@ -2,13 +2,13 @@ local material = {
 	-- Common colors
 
 	white =			'#EEFFFF',
-	gray =  		'#e4f3fa',
+	gray =  		'#a1abe0',
 	black = 		'#000000',
 	red =   		'#ff757f',
 	green = 		'#2df4c0',
 	--lime =		'#98EE64',
 	yellow =		'#ffc777',
-	paleblue =  		'#82aaff',
+	paleblue =  		'#d6e7f0',
 	cyan =		    '#a3ace2',
 	blue =  	'#04d1f9',
 	purple =		'#b4a4f4',
@@ -55,4 +55,3 @@ else
 end
 
 return material
-
