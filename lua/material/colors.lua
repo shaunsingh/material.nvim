@@ -8,9 +8,9 @@ local material = {
 	green = 		'#2df4c0',
 	--lime =		'#98EE64',
 	yellow =		'#ffc777',
-	blue =  		'#82aaff',
-	cyan =		'#a3ace2',
-	paleblue =  		'#04d1f9',
+	paleblue =  		'#82aaff',
+	cyan =		    '#a3ace2',
+	blue =  	'#04d1f9',
 	purple =		'#b4a4f4',
 	--violet =		'#B66FFD',
 	orange =		'#f67f81',
@@ -31,7 +31,7 @@ if vim.g.material_style == 'moonlight' then
 	material.bg =			'#212539'
 	material.bg_alt =		'#1B1E2B'
 	material.fg =			'#e4f3fa'
-	material.text =			'#e4f3fa'
+	material.text =			'#757dac'
 	material.comments =		'#7486d6'
 	material.selection = 	'#403c64'
 	material.contrast =		'#1b1d2c'
@@ -55,3 +55,4 @@ else
 end
 
 return material
+
