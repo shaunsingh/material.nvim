@@ -28,17 +28,17 @@ local material = {
 if vim.g.material_style == 'moonlight' then
 	-- Palenight theme style
 
-	material.bg =			'#24283b'
+	material.bg =			'#011627'
 	material.bg_alt =		'#1B1E2B'
-	material.fg =			'#A6ACCD'
+	material.fg =			'#c3ccdc'
 	material.text =			'#676E95'
 	material.comments =		'#676E95'
-	material.selection = 	'#717CB4'
+	material.selection = 		'#717CB4'
 	material.contrast =		'#202331'
 	material.active =		'#414863'
 	material.border =		'#414863'
-	material.line_numbers =	'#3A3F58'
-	material.highlight =	'#444267'
+	material.line_numbers =		'#3A3F58'
+	material.highlight =		'#444267'
 	material.disabled =		'#515772'
 	material.accent =		'#AB47BC'
 end
