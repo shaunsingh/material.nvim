@@ -2,19 +2,19 @@ local material = {
 	-- Common colors
 
 	white =			'#EEFFFF',
-	gray =  		'#717CB4',
+	gray =  		'#7f85a3',
 	black = 		'#000000',
-	red =   		'#F07178',
-	green = 		'#C3E88D',
+	red =   		'#ff757f',
+	green = 		'#c3e88d',
 	--lime =		'#98EE64',
-	yellow =		'#FFCB6B',
-	blue =  		'#82AAFF',
-	paleblue =		'#B0C9FF',
-	cyan =  		'#89DDFF',
-	purple =		'#C792EA',
+	yellow =		'#ffc777',
+	blue =  		'#82aaff',
+	paleblue =		'#3e68d7',
+	cyan =  		'#86e1fc',
+	purple =		'#c099ff',
 	--violet =		'#B66FFD',
-	orange =		'#F78C6C',
-	pink =  		'#FF9CAC',
+	orange =		'#ff966c',
+	pink =  		'#fca7ea',
 
 	error =			'#FF5370',
 	link =			'#80CBC4',
@@ -28,19 +28,19 @@ local material = {
 if vim.g.material_style == 'moonlight' then
 	-- Palenight theme style
 
-	material.bg =			'#212339'
+	material.bg =			'#212539'
 	material.bg_alt =		'#1B1E2B'
-	material.fg =			'#A6ACCD'
-	material.text =			'#676E95'
-	material.comments =		'#676E95'
-	material.selection = 	'#717CB4'
-	material.contrast =		'#1d2133'
+	material.fg =			'#e4f3fa'
+	material.text =			'#e4f3fa'
+	material.comments =		'#7e8eda'
+	material.selection = 	'#74a0f1'
+	material.contrast =		'#1b1d2c'
 	material.active =		'#414863'
 	material.border =		'#414863'
-	material.line_numbers =	'#3A3F58'
+	material.line_numbers =	'#5b6395'
 	material.highlight =	'#444267'
 	material.disabled =		'#515772'
-	material.accent =		'#AB47BC'
+	material.accent =		'#9da5d7'
 end
 
 -- Optional colors
