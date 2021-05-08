@@ -2,15 +2,15 @@ local material = {
 	-- Common colors
 
 	white =			'#EEFFFF',
-	gray =  		'#7f85a3',
+	gray =  		'#e4f3fa',
 	black = 		'#000000',
 	red =   		'#ff757f',
 	green = 		'#2df4c0',
 	--lime =		'#98EE64',
 	yellow =		'#ffc777',
 	blue =  		'#82aaff',
-	paleblue =		'#a3ace2',
-	cyan =  		'#04d1f9',
+	cyan =		'#a3ace2',
+	paleblue =  		'#04d1f9',
 	purple =		'#b4a4f4',
 	--violet =		'#B66FFD',
 	orange =		'#f67f81',
@@ -33,14 +33,14 @@ if vim.g.material_style == 'moonlight' then
 	material.fg =			'#e4f3fa'
 	material.text =			'#e4f3fa'
 	material.comments =		'#7486d6'
-	material.selection = 		'#403c64'
+	material.selection = 	'#403c64'
 	material.contrast =		'#1b1d2c'
 	material.active =		'#414863'
 	material.border =		'#414863'
-	material.line_numbers =		'#5b6395'
-	material.highlight =		'#a1abe0'
+	material.line_numbers =	'#5b6395'
+	material.highlight =	'#a1abe0'
 	material.disabled =		'#515772'
-	material.accent =		'#d8e9f1'
+	material.accent =		'#a3ace1'
 end
 
 -- Optional colors
