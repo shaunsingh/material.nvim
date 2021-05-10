@@ -154,9 +154,9 @@ theme.loadEditor = function ()
         healthWarning =         { fg = material.yellow },
 
         -- Dashboard
-        DashboardShortCut =                     { fg = material.red },
-        DashboardHeader =                       { fg = material.comments },
-        DashboardCenter =                       { fg = material.accent },
+        DashboardShortCut =                     { fg = material.blue },
+        DashboardHeader =                       { fg = material.red },
+        DashboardCenter =                       { fg = material.cyan },
         DashboardFooter =                       { fg = material.green, style = "italic" },
 
 	}
