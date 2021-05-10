@@ -103,7 +103,7 @@ theme.loadEditor = function ()
 		DiffDelete =			{ fg = material.red, bg = material.none, style = 'reverse' }, -- diff mode: Deleted line
 		DiffText =				{ fg = material.yellow, bg = material.none, style = 'reverse' }, -- diff mode: Changed text within a changed line
 		EndOfBuffer =			{ fg = material.disabled },
-		ErrorMsg =				{ fg = material.error },
+		ErrorMsg =				{ fg = material.none },
 		Folded =				{ fg = material.disabled, material.none, style = 'italic' },
 		FoldColumn =			{ fg = material.blue },
 		IncSearch =				{ fg = material.highlight, bg = material.white, style = 'reverse' },
@@ -390,7 +390,7 @@ theme.loadPlugins = function()
         NvimTreeFolderName=                     { fg = material.paleblue },
         NvimTreeEmptyFolderName=                { fg = material.disabled },
         NvimTreeFolderIcon=                     { fg = material.accent },
-        NvimTreeIndentMarker =                  { fg  = material.border },
+        NvimTreeIndentMarker =                  { fg  = material.disabled },
         LspDiagnosticsError =                   { fg = material.error },
         LspDiagnosticsWarning =                 { fg = material.yellow },
         LspDiagnosticsInformation =             { fg = material.paleblue },
