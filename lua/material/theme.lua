@@ -155,7 +155,7 @@ theme.loadEditor = function ()
 
         -- Dashboard
         DashboardShortCut =                     { fg = material.blue },
-        DashboardHeader =                       { fg = material.error },
+        DashboardHeader =                       { fg = material.orange },
         DashboardCenter =                       { fg = material.cyan },
         DashboardFooter =                       { fg = material.green, style = "italic" },
 
