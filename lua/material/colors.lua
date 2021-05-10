@@ -10,7 +10,7 @@ local material = {
 	yellow =		'#ffc777',
 	paleblue =  		'#d6e7f0',
 	cyan =		    '#b994f1',
-	blue =  	'#04d1f9',
+	blue =  	'#b4f9f8',
 	purple =		'#b4a4f4',
 	--violet =		'#B66FFD',
 	orange =		'#f67f81',
@@ -28,7 +28,7 @@ local material = {
 if vim.g.material_style == 'moonlight' then
 	-- Palenight theme style
 
-	material.bg =			'#191a2a'
+	material.bg =			'#212337'
 	material.bg_alt =		'#1B1E2B'
 	material.fg =			'#e4f3fa'
 	material.text =			'#757dac'
