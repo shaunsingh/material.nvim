@@ -1,9 +1,9 @@
 lua << EOF
-package.loaded['material'] = nil
-package.loaded['material.util'] = nil
-package.loaded['material.colors'] = nil
-package.loaded['material.theme'] = nil
-package.loaded['material.functions'] = nil
+package.loaded['moonlight'] = nil
+package.loaded['moonlight.util'] = nil
+package.loaded['moonlight.colors'] = nil
+package.loaded['moonlight.theme'] = nil
+package.loaded['moonlight.functions'] = nil
 
-require('material').set()
+require('moonlight').set()
 EOF
