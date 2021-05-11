@@ -1,6 +1,6 @@
 # 🌊 shaunsingh/moonlight.nvim
 
-##BREAKING: if you installed this theme earlier, replace instances of material with moonlight. This is to avoid issues when using both material.nvim and moonlight.nvim
+## BREAKING: if you installed this theme earlier, replace instances of material with moonlight. This is to avoid issues when using both material.nvim and moonlight.nvim
 
 ## Modified version of marko-cerovac/material.nvim, based off of the moonlight theme for vscode: https://github.com/atomiks/moonlight-vscode-theme
 
