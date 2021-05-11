@@ -1,5 +1,5 @@
 local util = {}
-local material = require('material.theme')
+local moonlight = require('moonlight.theme')
 
 -- Go trough the table and highlight the group with the color values
 util.highlight = function (group, color)
@@ -14,19 +14,19 @@ util.highlight = function (group, color)
     if color.link then vim.cmd("highlight! link " .. group .. " " .. color.link) end
 end
 
--- Only define Material if it's the active colorshceme
+-- Only define Moonlight if it's the active colorshceme
 function util.onColorScheme()
-  if vim.g.colors_name ~= "material" then
-    vim.cmd [[autocmd! Material]]
-    vim.cmd [[augroup! Material]]
+  if vim.g.colors_name ~= "moonlight" then
+    vim.cmd [[autocmd! Moonlight]]
+    vim.cmd [[augroup! Moonlight]]
   end
 end
 
 -- Change the background for the terminal and packer windows
 util.contrast = function ()
-    vim.cmd [[augroup Material]]
+    vim.cmd [[augroup Moonlight]]
     vim.cmd [[  autocmd!]]
-    vim.cmd [[  autocmd ColorScheme * lua require("material.util").onColorScheme()]]
+    vim.cmd [[  autocmd ColorScheme * lua require("moonlight.util").onColorScheme()]]
     vim.cmd [[  autocmd TermOpen * setlocal winhighlight=Normal:NormalFloat,SignColumn:NormalFloat]]
     vim.cmd [[  autocmd FileType packer setlocal winhighlight=Normal:NormalFloat,SignColumn:NormalFloat]]
     vim.cmd [[  autocmd FileType qf setlocal winhighlight=Normal:NormalFloat,SignColumn:NormalFloat]]
@@ -40,17 +40,17 @@ function util.load()
     if vim.fn.exists("syntax_on") then vim.cmd("syntax reset") end
     vim.o.background = "dark"
     vim.o.termguicolors = true
-    vim.g.colors_name = "material"
+    vim.g.colors_name = "moonlight"
 
     -- Load plugins, treesitter and lsp async
     local async
     async = vim.loop.new_async(vim.schedule_wrap(function ()
-        material.loadTerminal()
+        moonlight.loadTerminal()
 
         -- imort tables for plugins, treesitter and lsp
-        local plugins = material.loadPlugins()
-        local treesitter = material.loadTreeSitter()
-        local lsp = material.loadLSP()
+        local plugins = moonlight.loadPlugins()
+        local treesitter = moonlight.loadTreeSitter()
+        local lsp = moonlight.loadLSP()
 
         for group, colors in pairs(plugins) do
             util.highlight(group, colors)
@@ -63,7 +63,7 @@ function util.load()
         for group, colors in pairs(lsp) do
             util.highlight(group, colors)
         end
-        if vim.g.material_contrast == true then
+        if vim.g.moonlight_contrast == true then
             util.contrast()
         end
         async:close()
@@ -71,8 +71,8 @@ function util.load()
     end))
 
     -- load base theme
-    local editor = material.loadEditor()
-    local syntax = material.loadSyntax()
+    local editor = moonlight.loadEditor()
+    local syntax = moonlight.loadSyntax()
 
     for group, colors in pairs(editor) do
         util.highlight(group, colors)

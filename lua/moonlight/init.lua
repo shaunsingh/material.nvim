@@ -10,12 +10,12 @@
 --       \:\__\        \::/  /
 --        \/__/         \/__/
 --
--- Colorscheme name:        material.nvim
--- Description:             Colorscheme for NeoVim based on the material pallete
+-- Colorscheme name:        moonlight.nvim
+-- Description:             Colorscheme for NeoVim based on the moonlight pallete
 -- Author:                  Marko Cerovac <marko.cerovac16@gmail.com>
--- Website:                 https://github.com/marko-cerovac/material.nvim
+-- Website:                 https://github.com/marko-cerovac/moonlight.nvim
 
-local util = require('material.util')
+local util = require('moonlight.util')
 
 -- Load the theme
 local set = function ()

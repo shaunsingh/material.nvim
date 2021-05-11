@@ -1,4 +1,4 @@
-# 🌊 shaunsingh/material.nvim
+# 🌊 shaunsingh/moonlight.nvim
 
 ## Modified version of marko-cerovac/material.nvim, based off of the moonlight theme for vscode: https://github.com/atomiks/moonlight-vscode-theme
 
@@ -55,22 +55,22 @@ use 'shaunsingh/moonlight.nvim'
 Enable the colorscheme:
 ```vim 
 "Vim-Script:
-colorscheme material
+colorscheme moonlight
 ```
 
 ```lua
 --Lua:
-require('material').set()
+require('moonlight').set()
 ```
 
-To enable the `material-nvim` theme for `Lualine`, simply specify it in your lualine settings:
-( make sure to set the theme to 'material-nvim', as 'material' already exists built in to lualine)
+To enable the `moonlight-nvim` theme for `Lualine`, simply specify it in your lualine settings:
+( make sure to set the theme to 'moonlight-nvim', as 'material' already exists built in to lualine)
 
 ```lua
 require('lualine').setup {
   options = {
     -- ... your lualine config
-    theme = 'material-nvim'
+    theme = 'moonlight-nvim'
     -- ... your lualine config
   }
 }
@@ -81,53 +81,53 @@ require('lualine').setup {
 Set the style using:
 ```vim 
 "Vim-Script:
-let g:material_style = 'moonlight'
+let g:moonlight_style = 'moonlight'
 ```
 
 ```lua
 --Lua:
-vim.g.material_style = "moonlight"
+vim.g.moonlight_style = "moonlight"
 ```
 
 | Option                              | Default     | Description                                                                                                                                                     |
 | ----------------------------------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| material_style                      | `"moonlight"` | This version of the theme only includes moonlight, please visit the parent repo for the other material themes
-| material_italic_comments            | `false`     | Make comments italic                                                                                                                                            |
-| material_italic_keywords            | `false`     | Make keywords italic                                                                                                                                            |
-| material_italic_functions           | `false`     | Make functions italic                                                                                                                                           |
-| material_italic_variables           | `false`     | Make variables and identifiers italic                                                                                                                           |
-| material_contrast                   | `true`      | Make sidebars and popup menus like nvim-tree and telescope have a different background                                                                                       |
-| material_borders                    | `false`     | Enable the border between verticaly split windows visable
-| material_disable_background         | `false`     | Disable the setting of background color so that NeoVim can use your terminal background
+| moonlight_style                      | `"moonlight"` | This version of the theme only includes moonlight, please visit the parent repo for the other moonlight themes
+| moonlight_italic_comments            | `false`     | Make comments italic                                                                                                                                            |
+| moonlight_italic_keywords            | `false`     | Make keywords italic                                                                                                                                            |
+| moonlight_italic_functions           | `false`     | Make functions italic                                                                                                                                           |
+| moonlight_italic_variables           | `false`     | Make variables and identifiers italic                                                                                                                           |
+| moonlight_contrast                   | `true`      | Make sidebars and popup menus like nvim-tree and telescope have a different background                                                                                       |
+| moonlight_borders                    | `false`     | Enable the border between verticaly split windows visable
+| moonlight_disable_background         | `false`     | Disable the setting of background color so that NeoVim can use your terminal background
 
 ```lua
 -- Example config in lua
-vim.g.material_style = 'moonlight'         
-vim.g.material_italic_comments = true
-vim.g.material_italic_keywords = true
-vim.g.material_italic_functions = true
-vim.g.material_italic_variables = false
-vim.g.material_contrast = true
-vim.g.material_borders = false 
-vim.g.material_disable_background = false
+vim.g.moonlight_style = 'moonlight'         
+vim.g.moonlight_italic_comments = true
+vim.g.moonlight_italic_keywords = true
+vim.g.moonlight_italic_functions = true
+vim.g.moonlight_italic_variables = false
+vim.g.moonlight_contrast = true
+vim.g.moonlight_borders = false 
+vim.g.moonlight_disable_background = false
 
 -- Load the colorscheme
-require('material').set()
+require('moonlight').set()
 ```
 
 ```vim
 " Example config in Vim-Script
-let g:material_style = 'moonlight'         
-let g:material_italic_comments = true
-let g:material_italic_keywords = true
-let g:material_italic_functions = true
-let g:material_italic_variables = false
-let g:material_contrast = true
-let g:material_borders = false 
-let g:material_disable_background = false
+let g:moonlight_style = 'moonlight'         
+let g:moonlight_italic_comments = true
+let g:moonlight_italic_keywords = true
+let g:moonlight_italic_functions = true
+let g:moonlight_italic_variables = false
+let g:moonlight_contrast = true
+let g:moonlight_borders = false 
+let g:moonlight_disable_background = false
 
 -- Load the colorsheme
-colorscheme material
+colorscheme moonlight
 ```
 
 Original Readme: https://github.com/marko-cerovac/material.nvim/blob/pure-lua/README.md
