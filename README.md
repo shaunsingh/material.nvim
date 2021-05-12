@@ -1,12 +1,10 @@
-# 🌊 shaunsingh/moonlight.nvim
-
-## BREAKING: if you installed this theme earlier, replace instances of material with moonlight. This is to avoid issues when using both material.nvim and moonlight.nvim
+# 🌘 shaunsingh/moonlight.nvim
 
 ## Modified version of marko-cerovac/material.nvim, based off of the moonlight theme for vscode: https://github.com/atomiks/moonlight-vscode-theme
 
 ![Screen Shot 2021-05-08 at 6 34 55 PM](https://user-images.githubusercontent.com/71196912/117555317-2f16b900-b02c-11eb-817c-f7e828c4abc0.png)
 
-## ✨ Features
+## 🌠 Features
 
 moonlight.nvim is meant to be a modern colorscheme written in lua for NeoVim that supports a lot of the new features
 added to NeoVim like built-in LSP and [TreeSitter](https://github.com/nvim-treesitter/nvim-treesitter)
@@ -39,7 +37,7 @@ added to NeoVim like built-in LSP and [TreeSitter](https://github.com/nvim-trees
 
 + Neovim >= 0.5.0
 
-## ⚓ Installation
+## 🌙 Installation
 
 Install via your favourite package manager:
 ```vim
@@ -52,7 +50,7 @@ Plug 'shaunsingh/moonlight.nvim'
 use 'shaunsingh/moonlight.nvim'
 ```
 
-## 🐬 Usage
+## 🌓 Usage
 
 Enable the colorscheme:
 ```vim 
