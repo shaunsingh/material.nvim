@@ -80,20 +80,9 @@ require('lualine').setup {
 
 ## ⚙️ Configuration
 
-Set the style using:
-```vim 
-"Vim-Script:
-let g:moonlight_style = 'moonlight'
-```
-
-```lua
---Lua:
-vim.g.moonlight_style = "moonlight"
-```
 
 | Option                              | Default     | Description                                                                                                                                                     |
 | ----------------------------------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| moonlight_style                      | `"moonlight"` | This version of the theme only includes moonlight, please visit the parent repo for the other moonlight themes
 | moonlight_italic_comments            | `false`     | Make comments italic                                                                                                                                            |
 | moonlight_italic_keywords            | `false`     | Make keywords italic                                                                                                                                            |
 | moonlight_italic_functions           | `false`     | Make functions italic                                                                                                                                           |
@@ -104,7 +93,6 @@ vim.g.moonlight_style = "moonlight"
 
 ```lua
 -- Example config in lua
-vim.g.moonlight_style = 'moonlight'         
 vim.g.moonlight_italic_comments = true
 vim.g.moonlight_italic_keywords = true
 vim.g.moonlight_italic_functions = true
@@ -119,7 +107,6 @@ require('moonlight').set()
 
 ```vim
 " Example config in Vim-Script
-let g:moonlight_style = 'moonlight'         
 let g:moonlight_italic_comments = true
 let g:moonlight_italic_keywords = true
 let g:moonlight_italic_functions = true
