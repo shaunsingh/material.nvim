@@ -65,14 +65,13 @@ colorscheme moonlight
 require('moonlight').set()
 ```
 
-To enable the `moonlight-nvim` theme for `Lualine`, simply specify it in your lualine settings:
-( make sure to set the theme to 'moonlight-nvim', as 'material' already exists built in to lualine)
+To enable the `moonlight` theme for `Lualine`, simply specify it in your lualine settings:
 
 ```lua
 require('lualine').setup {
   options = {
     -- ... your lualine config
-    theme = 'moonlight-nvim'
+    theme = 'moonlight'
     -- ... your lualine config
   }
 }
