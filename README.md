@@ -2,7 +2,8 @@
 
 ## Modified version of marko-cerovac/material.nvim, based off of the moonlight theme for vscode: https://github.com/atomiks/moonlight-vscode-theme
 
-![Screen Shot 2021-05-08 at 6 34 55 PM](https://user-images.githubusercontent.com/71196912/117555317-2f16b900-b02c-11eb-817c-f7e828c4abc0.png)
+![image](https://user-images.githubusercontent.com/71196912/117904602-a3a55e00-b29f-11eb-9fc0-ab585eafb46e.png)
+
 
 ## 🌠 Features
 
