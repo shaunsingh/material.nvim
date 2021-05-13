@@ -1,19 +1,14 @@
---         ___           ___
---        /\  \         /\__\
---       |::\  \       /:/  /
---       |:|:\  \     /:/  /
---     __|:|\:\  \   /:/  /  ___
---    /::::|_\:\__\ /:/__/  /\__\
---    \:\~~\  \/__/ \:\  \ /:/  /
---     \:\  \        \:\  /:/  /
---      \:\  \        \:\/:/  /
---       \:\__\        \::/  /
---        \/__/         \/__/
---
--- Colorscheme name:        moonlight.nvim
--- Description:             Colorscheme for NeoVim based on the moonlight pallete
--- Author:                  Marko Cerovac <marko.cerovac16@gmail.com>
--- Website:                 https://github.com/marko-cerovac/moonlight.nvim
+--                            M O O N L I G H T
+--      _..._         _..._         _..._         _..._         _..._
+--    .:::::::.     .::::. `.     .::::  `.     .::'   `.     .'     `.
+--   :::::::::::   :::::::.  :   ::::::    :   :::       :   :         :
+--   :::::::::::   ::::::::  :   ::::::    :   :::       :   :         :
+--   `:::::::::'   `::::::' .'   `:::::   .'   `::.     .'   `.       .'
+--     `':::''       `'::'-'       `'::.-'       `':..-'       `-...-'
+
+-- Colorscheme name:    moonlight.nvim
+-- Description:         Port of VSCode's Moonlight colorscheme for NeoVim
+-- Author:              https://github.com/shaunsingh
 
 local util = require('moonlight.util')
 
