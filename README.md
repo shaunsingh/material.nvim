@@ -1,9 +1,8 @@
 # 🌘 shaunsingh/moonlight.nvim
 
-## Modified version of marko-cerovac/material.nvim, based off of the moonlight theme for vscode: https://github.com/atomiks/moonlight-vscode-theme
+## Modified version of Marko Cerovac's [Material.nvim](https://github.com/marko-cerovac/material.nvim), based off of the [Moonlight Theme](https://github.com/atomiks/moonlight-vscode-theme) for VSCode 
 
-![image](https://user-images.githubusercontent.com/71196912/117904602-a3a55e00-b29f-11eb-9fc0-ab585eafb46e.png)
-
+![preview github](https://user-images.githubusercontent.com/71196912/118175481-27755c80-b3fe-11eb-9d70-85a9f936c33d.png)
 
 ## 🌠 Features
 
