@@ -440,8 +440,8 @@ theme.loadPlugins = function()
         IndentBlanklineContextChar =            { fg = moonlight.disabled },
 	
 	 -- Nvim dap
-         DapBreakpoint =                         { fg = material.red },
-         DapStopped =                            { fg = material.green },
+         DapBreakpoint =                         { fg = moonlight.red },
+         DapStopped =                            { fg = moonlight.green },
     }
 
     -- Options:
