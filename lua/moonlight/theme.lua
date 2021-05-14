@@ -351,7 +351,7 @@ theme.loadPlugins = function()
         NeogitRemote =                          { fg = moonlight.purple },
         NeogitHunkHeader =                      { fg = moonlight.fg, bg = moonlight.highlight },
         NeogitHunkHeaderHighlight =             { fg = moonlight.blue, bg = moonlight.contrast },
-        NeogitDiffContextHighlight =            { fg = moonlight.bg_alt, bg = moonlight.contrast },
+        NeogitDiffContextHighlight =            { fg = moonlight.text, bg = moonlight.contrast },
         NeogitDiffDeleteHighlight =             { fg = moonlight.red },
         NeogitDiffAddHighlight =                { fg = moonlight.green },
 
