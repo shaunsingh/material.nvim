@@ -113,7 +113,7 @@ theme.loadEditor = function ()
 		ModeMsg =				{ fg = moonlight.accent },
 		MoreMsg =				{ fg = moonlight.accent },
 		NonText =				{ fg = moonlight.disabled },
-		Pmenu =					{ fg = moonlight.fg, bg = moonlight.contrast },
+		Pmenu =					{ fg = moonlight.text, bg = moonlight.contrast },
 		PmenuSel =				{ fg = moonlight.accent, bg = moonlight.active },
 		PmenuSbar =				{ fg = moonlight.text, bg = moonlight.contrast },
 		PmenuThumb =			{ fg = moonlight.fg, bg = moonlight.accent },
@@ -155,7 +155,7 @@ theme.loadEditor = function ()
 
         -- Dashboard
         DashboardShortCut =                     { fg = moonlight.blue },
-        DashboardHeader =                       { fg = moonlight.purple },
+        DashboardHeader =                       { fg = moonlight.red },
         DashboardCenter =                       { fg = moonlight.cyan },
         DashboardFooter =                       { fg = moonlight.green, style = "italic" },
 
