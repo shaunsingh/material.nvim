@@ -104,13 +104,13 @@ require('moonlight').set()
 
 ```vim
 " Example config in Vim-Script
-let g:moonlight_italic_comments = true
-let g:moonlight_italic_keywords = true
-let g:moonlight_italic_functions = true
-let g:moonlight_italic_variables = false
-let g:moonlight_contrast = true
-let g:moonlight_borders = false 
-let g:moonlight_disable_background = false
+let g:moonlight_italic_comments = v:true
+let g:moonlight_italic_keywords = v:true
+let g:moonlight_italic_functions = v:true
+let g:moonlight_italic_variables = v:false
+let g:moonlight_contrast = v:true
+let g:moonlight_borders = v:false 
+let g:moonlight_disable_background = v:false
 
 -- Load the colorsheme
 colorscheme moonlight
