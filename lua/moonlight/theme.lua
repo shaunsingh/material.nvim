@@ -139,7 +139,7 @@ theme.loadEditor = function ()
 		WarningMsg =			{ fg = moonlight.yellow },
 		WildMenu =				{ fg = moonlight.orange, bg = moonlight.none, style = 'bold' },
 		CursorColumn =			{ fg = moonlight.none, bg = moonlight.active },
-		CursorLine =			{ fg = moonlight.none, bg = moonlight.none },
+		CursorLine =			{ fg = moonlight.none, bg = moonlight.dark_blue },
 		ToolbarLine =			{ fg = moonlight.fg, bg = moonlight.bg_alt },
 		ToolbarButton =			{ fg = moonlight.fg, bg = moonlight.none, style = 'bold' },
 		NormalMode =			{ fg = moonlight.accent, bg = moonlight.none, style = 'reverse' },
