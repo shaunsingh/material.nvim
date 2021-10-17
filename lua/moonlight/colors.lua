@@ -30,6 +30,8 @@ local moonlight = {
 
 	error =         '#FF5370',
 	link =          '#80CBC4',
+	
+	dark_blue =     '#2a2e48',
 
 	none =          'NONE'
 }
