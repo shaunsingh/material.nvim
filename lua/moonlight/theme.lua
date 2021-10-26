@@ -53,14 +53,14 @@ theme.loadSyntax = function ()
 	-- Options:
 
 	-- Italic comments
-	if vim.g.moonlight_italic_comments == true then
+	if vim.g.moonlight_italic_comments == 'true' then
 		syntax.Comment =		{fg = moonlight.comments, bg = moonlight.none, style = 'italic'} -- italic comments
 	else
 		syntax.Comment =		{fg = moonlight.comments} -- normal comments
 	end
 
 	-- Italic Keywords
-	if vim.g.moonlight_italic_keywords == true then
+	if vim.g.moonlight_italic_keywords == 'true' then
 		syntax.Conditional =		{fg = moonlight.purple, bg = moonlight.none, style = 'italic'} -- italic if, then, else, endif, switch, etc.
 		syntax.Keyword =			{fg = moonlight.purple, bg = moonlight.none, style = 'italic'} -- italic for, do, while, etc.
 		syntax.Repeat =				{fg = moonlight.purple, bg = moonlight.none, style = 'italic'} -- italic any other keyword
@@ -71,13 +71,13 @@ theme.loadSyntax = function ()
 	end
 
 	-- Italic Function names
-	if vim.g.moonlight_italic_functions == true then
+	if vim.g.moonlight_italic_functions == 'true' then
 		syntax.Function =		{fg = moonlight.blue, bg = moonlight.none, style = 'italic'} -- italic funtion names
 	else
 		syntax.Function =		{fg = moonlight.blue} -- normal function names
 	end
 
-	if vim.g.moonlight_italic_variables == true then
+	if vim.g.moonlight_italic_variables == 'true' then
 		Identifier =				{fg = moonlight.gray, bg = moonlight.none, style = 'italic'}; -- any variable name
     else
 		Identifier =				{fg = moonlight.gray}; -- any variable name
@@ -164,7 +164,7 @@ theme.loadEditor = function ()
     -- Options:
 
     --Set transparent background
-    if vim.g.moonlight_disable_background == true then
+    if vim.g.moonlight_disable_background == 'true' then
 		editor.Normal =				{ fg = moonlight.fg, bg = moonlight.none } -- normal text and background color
 		editor.SignColumn =			{ fg = moonlight.fg, bg = moonlight.none }
     else
@@ -173,7 +173,7 @@ theme.loadEditor = function ()
     end
 
     -- Remove window split borders
-    if vim.g.moonlight_borders == true then
+    if vim.g.moonlight_borders == 'true' then
 		editor.VertSplit =				{ fg = moonlight.border }
     else
 		editor.VertSplit =				{ fg = moonlight.bg }
@@ -253,13 +253,13 @@ theme.loadTreeSitter = function ()
     -- Options:
 
     -- Italic comments
-    if vim.g.moonlight_italic_comments == true then
+    if vim.g.moonlight_italic_comments == 'true' then
         treesitter.TSComment=                  { fg = moonlight.comments , bg = moonlight.none, style = 'italic' }    -- For comment blocks.
     else
         treesitter.TSComment=                  { fg = moonlight.comments }    -- For comment blocks.
     end
 
-    if vim.g.moonlight_italic_keywords == true then
+    if vim.g.moonlight_italic_keywords == 'true' then
         treesitter.TSConditional =             { fg = moonlight.purple, style = 'italic' }    -- For keywords related to conditionnals.
         treesitter.TSKeyword =                 { fg = moonlight.purple, style = 'italic' } -- For keywords that don't fall in previous categories.
         treesitter.TSRepeat =                  { fg = moonlight.purple, style = 'italic' }    -- For keywords related to loops.
@@ -271,7 +271,7 @@ theme.loadTreeSitter = function ()
         treesitter.TSKeywordFunction =         { fg = moonlight.purple } -- For keywords used to define a fuction.
     end
 
-    if vim.g.moonlight_italic_functions == true then
+    if vim.g.moonlight_italic_functions == 'true' then
         treesitter.TSFunction =                { fg = moonlight.blue, style = 'italic' }    -- For fuction (calls and definitions).
         treesitter.TSMethod =                  { fg = moonlight.blue, style = 'italic' }    -- For method calls and definitions.
         treesitter.TSFuncBuiltin =             { fg = moonlight.cyan, style = 'italic' }    -- For builtin functions: `table.insert` in Lua.
@@ -281,7 +281,7 @@ theme.loadTreeSitter = function ()
         treesitter.TSFuncBuiltin =             { fg = moonlight.cyan }    -- For builtin functions: `table.insert` in Lua.
     end
 
-    if vim.g.moonlight_italic_variables == true then
+    if vim.g.moonlight_italic_variables == 'true' then
         treesitter.TSVariable =                { fg = moonlight.gray, style = 'italic' } -- Any variable name that does not have another highlight.
         treesitter.TSVariableBuiltin =         { fg = moonlight.gray, style = 'italic' } -- Variable names that are defined by the languages, like `this` or `self`.
     else
@@ -447,7 +447,7 @@ theme.loadPlugins = function()
     -- Options:
 
     -- Disable nvim-tree background
-        if vim.g.moonlight_disable_background == true then
+        if vim.g.moonlight_disable_background == 'true' then
             plugins.NvimTreeNormal =                        { fg = moonlight.fg, bg = moonlight.none }
         else
             plugins.NvimTreeNormal =                        { fg = moonlight.fg, bg = moonlight.sidebar }
