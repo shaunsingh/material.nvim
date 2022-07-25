@@ -3,15 +3,15 @@ local moonlight = require('moonlight.theme')
 
 -- Go trough the table and highlight the group with the color values
 util.highlight = function (group, color)
-    local style = color.style and "gui=" .. color.style or "gui=NONE"
-    local fg = color.fg and "guifg=" .. color.fg or "guifg=NONE"
-    local bg = color.bg and "guibg=" .. color.bg or "guibg=NONE"
-    local sp = color.sp and "guisp=" .. color.sp or ""
+    local style = colors.style and "gui=" .. colors.style or "gui=NONE"
+    local fg = colors.fg and "guifg=" .. colors.fg or "guifg=NONE"
+    local bg = colors.bg and "guibg=" .. colors.bg or "guibg=NONE"
+    local sp = colors.sp and "guisp=" .. colors.sp or ""
 
     local hl = "highlight " .. group .. " " .. style .. " " .. fg .. " " .. bg .. " " .. sp
 
     vim.cmd(hl)
-    if color.link then vim.cmd("highlight! link " .. group .. " " .. color.link) end
+    if colors.link then vim.cmd("highlight! link " .. group .. " " .. colors.link) end
 end
 
 -- Only define Moonlight if it's the active colorshceme
