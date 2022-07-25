@@ -6,7 +6,7 @@ util.highlight = function (group, color)
     local style = colors.style and "gui=" .. colors.style or "gui=NONE"
     local fg = colors.fg and "guifg=" .. colors.fg or "guifg=NONE"
     local bg = colors.bg and "guibg=" .. colors.bg or "guibg=NONE"
-    local sp = colors.sp and "guisp=" .. colors.sp or ""
+    local sp = colors.sp and "guisp=" .. colors.sp or "guibg=NONE"
 
     local hl = "highlight " .. group .. " " .. style .. " " .. fg .. " " .. bg .. " " .. sp
 

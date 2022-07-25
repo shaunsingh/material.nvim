@@ -38,7 +38,7 @@ local moonlight = {
 -- Optional colors
 
 -- Enable contrast sidebars, floating windows and popup menus
-if vim.g.moonlight_contrast == false then
+if vim.g.moonlight_contrast == true then
     moonlight.sidebar = moonlight.bg
     moonlight.float = moonlight.bg
 else
