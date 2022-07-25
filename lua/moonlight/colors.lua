@@ -13,10 +13,12 @@ local moonlight = {
 	orange =        '#f67f81',
 	pink =          '#ecb2f0',
 
+	selection_foreground =
+	selection_background = 
 	bg =            '#212337',
 	bg_alt =        '#1B1E2B',
-	fg =            '#e4f3fa',
-	text =          '#757dac',
+	fg =            '#c8d3f5',
+	text =          '#a9b8e8',
 	comments =      '#7486d6',
 	selection =     '#1B1E2B',
 	contrast =      '#1b1c2b',
