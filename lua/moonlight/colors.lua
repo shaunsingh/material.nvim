@@ -24,7 +24,7 @@ local moonlight = {
 	border =        '#414863',
 	line_numbers =  '#596399',
 	highlight =     '#a1abe0',
-	disabled =      '#515772',
+	disabled =      '#1B1E2B',
 	cursor =        '#5cb4fc',
 	accent =        '#a3ace1',
 
