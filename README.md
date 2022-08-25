@@ -84,7 +84,8 @@ require('lualine').setup {
 | moonlight_italic_keywords            | `false`     | Make keywords italic                                                                                                                                            |
 | moonlight_italic_functions           | `false`     | Make functions italic                                                                                                                                           |
 | moonlight_italic_variables           | `false`     | Make variables and identifiers italic                                                                                                                           |
-| moonlight_contrast                   | `true`      | Make sidebars and popup menus like nvim-tree and telescope have a different background                                                                                       |
+| moonlight_italic_strings             | `true`      | Make strings italic                                                                                                                                             |
+| moonlight_contrast                   | `true`      | Make sidebars and popup menus like nvim-tree and telescope have a different background                                                                          |
 | moonlight_borders                    | `false`     | Enable the border between verticaly split windows visable
 | moonlight_disable_background         | `false`     | Disable the setting of background color so that NeoVim can use your terminal background
 
@@ -93,6 +94,7 @@ require('lualine').setup {
 vim.g.moonlight_italic_comments = true
 vim.g.moonlight_italic_keywords = true
 vim.g.moonlight_italic_functions = true
+vim.g.moonlight_italic_strings = false
 vim.g.moonlight_italic_variables = false
 vim.g.moonlight_contrast = true
 vim.g.moonlight_borders = false 
@@ -108,6 +110,7 @@ let g:moonlight_italic_comments = true
 let g:moonlight_italic_keywords = true
 let g:moonlight_italic_functions = true
 let g:moonlight_italic_variables = false
+let g:moonlight_italic_strings = false
 let g:moonlight_contrast = true
 let g:moonlight_borders = false 
 let g:moonlight_disable_background = false

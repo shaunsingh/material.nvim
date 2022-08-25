@@ -83,6 +83,13 @@ theme.loadSyntax = function ()
 		Identifier =				{fg = moonlight.gray}; -- any variable name
     end
 
+    -- Italic strings
+	if vim.g.moonlight_italic_strings == false then
+        syntax.String =         {fg = moonlight.green, bg = moonlight.none}
+    else
+        syntax.String =		    {fg = moonlight.green, bg = moonlight.none, style= 'italic'}
+	end
+
     return syntax
 
 end
